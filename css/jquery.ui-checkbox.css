@@ -1,0 +1,47 @@
+.ui-checkbox-control {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    min-height: 20px;
+	cursor: pointer;
+	padding-left: 22px;
+}
+
+.ui-checkbox-control .ui-checkbox-icon {
+    position: absolute;
+    margin-top: 2px;
+	margin-left: -18px;
+	width: 16px;
+	height: 16px;
+    background: url(../images/jquery.ui-checkbox.png);
+	background-position: -16px 0;
+}
+.ui-checkbox-control.ui-checkbox-checked .ui-checkbox-icon {
+	background-position: -16px -16px;
+}
+
+.ui-checkbox-control.ui-checkbox-disabled .ui-checkbox-icon {
+	background-position: -16px -32px;
+}
+.ui-checkbox-control.ui-checkbox-disabled.ui-checkbox-checked .ui-checkbox-icon {
+	background-position: -16px -48px;
+}
+
+
+.ui-checkbox-control:hover .ui-checkbox-icon {
+	background-position: 0 0;
+}
+.ui-checkbox-control.ui-checkbox-checked:hover .ui-checkbox-icon {
+	background-position: 0 -16px;
+}
+.ui-checkbox-control.ui-checkbox-disabled:hover .ui-checkbox-icon {
+	background-position: 0 -32px;
+}
+.ui-checkbox-control.ui-checkbox-disabled.ui-checkbox-checked:hover .ui-checkbox-icon {
+	background-position: 0 -48px;
+}
+
+.ui-checkbox-control .ui-checkbox-title {
+    position: relative;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "jquery.ui-checkbox",
+  "version": "1.0.0",
+  "main": [
+    "./css/jquery.ui-checkbox.css",
+    "./js/jquery.ui-checkbox.js"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  }
+}
