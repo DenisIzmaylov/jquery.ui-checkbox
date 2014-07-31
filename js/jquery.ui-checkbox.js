@@ -1,5 +1,5 @@
 /**
- * jQuery UI-Slider component
+ * jQuery UI-CheckBox component
  * @author Denis Izmaylov <izmaylov.dm@gmail.com>
  * @date 2013-07-31
  *
