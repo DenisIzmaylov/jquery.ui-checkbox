@@ -45,3 +45,27 @@
 .ui-checkbox-control .ui-checkbox-title {
     position: relative;
 }
+
+
+
+.ui-checkbox-control.ui-checkbox-fa-icon .ui-checkbox-icon {
+	border: 1px solid #428bca;
+	background: white;
+	color: #428bca;
+	border-radius: 3px;
+	font-size: 12px;
+	width: 14px;
+	height: 14px;
+	margin-top: 3px;
+}
+.ui-checkbox-control.ui-checkbox-fa-icon:hover .ui-checkbox-icon {
+	color: #7EC3FF;
+}
+.ui-checkbox-control.ui-checkbox-fa-icon.ui-checkbox-disabled .ui-checkbox-icon {
+	border: 1px solid #888;
+	background: #eee;
+	color: #bbb;
+}
+.ui-checkbox-control.ui-checkbox-fa-icon.ui-checkbox-disabled:hover .ui-checkbox-icon {
+	background: white;
+}

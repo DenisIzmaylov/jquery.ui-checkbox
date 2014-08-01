@@ -1,5 +1,5 @@
 /**
- * jQuery UI-CheckBox component
+ * jQuery UI-Slider component
  * @author Denis Izmaylov <izmaylov.dm@gmail.com>
  * @date 2013-07-31
  *
@@ -64,6 +64,7 @@
             disabled: false,
             value: true,
 			example: '',
+			iconClass: '', // for checked icon style
 
             createElements: true
 
@@ -101,6 +102,7 @@
                 }
 				
 				
+				this.iconObj = this.owner.find('.ui-checkbox-icon');
 				this.titleObj = this.owner.find('.ui-checkbox-title');
 				
 
@@ -170,6 +172,11 @@
 							.trigger('change', [value, previousValue])
 							.toggleClass('ui-checkbox-checked', value);
 						
+						if (this.options.iconClass) {
+							
+							this.iconObj.toggleClass(this.options.iconClass, value);
+						}
+						
 						break;
 						
 					case 'disabled':
@@ -182,6 +189,14 @@
 					
 						this.titleObj.html(value);
 							
+						break;
+						
+					case 'iconClass':
+						
+						this.iconObj
+							.removeClass(previousValue)
+							.toggleClass(value, this.options.value);
+						
 						break;
 
                 } // switch (...)
