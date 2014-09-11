@@ -40,3 +40,8 @@ Customizable CheckBox control with custom icon and reaction on mouse hover event
 </script>
 ```
 4. You can also look example in `example.html`.
+
+###TODO###
+1. iOS-like style.
+2. Bootstrap 3 compatible.
+3. Allow focus.
